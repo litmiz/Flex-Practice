@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+    <style>
+        .container {
+            display: flex;
+            margin-bottom: 0.5%;
+        }
+
+        .container div {
+            background-color: blue;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serifs;
+            border: 1px solid #ffffff;
+            height: 100px;
+        }
+
+        .container p {
+            margin: 15px;
+        }
+        
+        #container1 div {
+            flex: 3;
+        }
+        
+        #container2 div {
+            flex: 1;
+        }
+                
+        #container3 div {
+            flex: 2;
+        }
+
+        #container4 #box1 {
+            flex: 4;
+        }
+
+        #container4 #box2 {
+            flex: 1;
+        }
+
+        #container4 #box3 {
+            flex: 1;
+        }
+
+        #container5 #box1 {
+            flex-basis: 43%;
+        }
+
+        #container5 #box2 {
+            flex-basis: 15%;
+        }
+
+        #container5 #box3 {
+            flex-basis: 15%;
+        }
+
+        #container6 {
+            justify-content: space-between;
+        }
+
+        #container6 #box1 {
+            flex-basis: 66.5%;
+        }
+
+        #container6 #box2 {
+            flex-basis: 16%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container1" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+        <div id="box2">
+            <p>BOX2</p>
+        </div>
+        <div id="box3">
+            <p>BOX3</p>
+        </div>
+    </div>
+    <div id="container2" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+    </div>
+    <div id="container3" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+        <div id="box2">
+            <p>BOX2</p>
+        </div>
+    </div>
+    <div id="container4" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+        <div id="box2">
+            <p>BOX2</p>
+        </div>
+        <div id="box3">
+            <p>BOX3</p>
+        </div>
+    </div>
+    <div id="container5" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+        <div id="box2">
+            <p>BOX2</p>
+        </div>
+        <div id="box3">
+            <p>BOX3</p>
+        </div>
+    </div>
+    <div id="container6" class="container">
+        <div id="box1">
+            <p>BOX1</p>
+        </div>
+        <div id="box2">
+            <p>BOX2</p>
+        </div>
+    </div>
+</body>
+</html>
